@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/boton.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/localization/messages_es_AR.min.js"></script>
+
+    <script src="js/cargar.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#formulario_registro").validate({
+                rules: {
+                    nombre: {
+                        required: true,
+                        maxlength: 100,
+                        minlength: 10,
+                        minWords: 2
+                    },
+                    rut: {
+                        required: true,
+                        maxlength: 100,
+                        minlength: 10,
+                    },
+                    correo: {
+                        required: true,
+                        email: true
+                    },
+                    fechana: {
+                        required: true
+                    },
+                    telefono: {
+                        required: true,
+                        min: 10000000,
+                        max: 99999999
+                    },
+                    cosa: {
+                        required: true
+                    },
+                    opt: {
+                        required: true
+                    },
+                    casa: {
+                        required: true
+                    },
+                    cidade: {
+                        required: true
+                    }
+                },
+                submitHandler: function (form) {
+                    alert("Formulario Enviado.")
+                }
+            })
+        })
+    </script>
+
+
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <div class="wrap">
+            <form action="" class="formulario" name="formulario_registro" id="formulario_registro" method="POST">
+                <div>
+                    <h1>FORMULARIO</h1>
+                    <div class="input-group">
+                        <label class="label" for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" class="field">
+
+                    </div>
+                    <div class="input-group">
+                        <label class="label" for="rut">RUT:</label>
+                        <input type="text" id="rut" name="rut" class="field" oninput="checkRut(this)">
+
+
+                    </div>
+                    <div class="input-group">
+                        <label class="label" for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" class="field">
+
+                    </div>
+
+
+                    <div class="input-group">
+                        <label class="label" for="fechana">Fecha de Nacimiento</label>
+                        <input type="date" id="fechana" name="fechana" class="field" max="2000-09-10" required>
+
+                    </div>
+                    <div class="input-group">
+                        <label class="label" for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" class="field">
+
+                    </div>
+                    <label class="label" for="Region">Región</label>
+                    <select class=" control" name="cosa" id="cosa" onchange="cambia()">
+                        <option value="">Seleccione</option>
+                        <option value="1">XV de Arica y Parinacota</option>
+                        <option value="2">I de Tarapacá</option>
+                        <option value="3">II de Antofagasta</option>
+                        <option value="4">III de Atacama</option>
+                        <option value="5">IV de Coquimbo</option>
+                        <option value="6">V de Valparaíso</option>
+                        <option value="7">VI del Libertador General Bernardo O'Higgins</option>
+                        <option value="8">VII del Maule</option>
+                        <option value="9">VIII del Bío Bío</option>
+                        <option value="10">IX de la Araucanía</option>
+                        <option value="11">XIV de los Ríos</option>
+                        <option value="12">X de los Lagos</option>
+                        <option value="13">XI Aisén del General Carlos Ibáñez del Campo</option>
+                        <option value="14">XII de Magallanes y Antártica Chilena</option>
+                        <option value="15">Metropolitana de Santiago</option>
+
+                    </select>
+                    <label class="label" for="Ciudad">Ciudad</label>
+                    <select class="seleccion" name="opt" id="opt">
+                        <option value="">Seleccione
+                    </select>
+                    <label class="label" for="Casa">Hogar</label>
+                    <select class="seleccion" name="casa" id="casa">
+                        <option value="">Seleccione</option>
+                        <option value="1">Casa con patio grande</option>
+                        <option value="2">Casa con patio pequeño</option>
+                        <option value="3">Casa sin patio</option>
+                        <option value="4">Departamento</option>
+
+
+                    </select>
+
+                    <input type="submit" id="btn-submit" value="Enviar" class="btn btn-green">
+                    <script src="js/validarRUT.js"></script>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

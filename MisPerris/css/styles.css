@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#Cuerpo1{
+    background-color: rgba(109, 205, 170 ,1);
+}
+
+.logo-menu{
+    background-color:  rgb(133, 212, 183, 1);
+}
+.logo-menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 40px 40px;
+}
+.logo-menu .menu a:hover{
+    border-bottom: 4px solid white;
+    padding-bottom: 35px;
+}
+.futer{
+    color: white;
+    display: inline-block;
+}
+.futer h3{
+padding: 20px 40px;
+display: inline-block;
+
+}
+
+.futer a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+}
+.futer .pictures a:hover{
+    border-bottom: 4px solid white;
+    padding-bottom: 35px;
+}
+.linea ul li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+.linea ul li a{
+text-decoration: none;
+}
+
+
+    .main{
+        margin: 0;
+        width: 100%;
+        text-align: end;
+    }
+    #plato{
+        width: 60%;
+    }
+    .main2{
+        margin: 2%;
+        width: 100%;
+       
+    }
+    .main2 p{
+        height: 100px;
+        
+    }
+    .fin{
+        background-color: darkgrey;
+    }
+    h4{
+       color: grey;
+    }
+    .boton {
+        border: 1px solid rgb(0, 0, 0); /*anchura, estilo y color borde*/
+        padding: 6px; /*espacio alrededor texto*/
+        background-color: white; /*color botón*/
+        color: black; /*color texto*/
+        text-decoration: none; /*decoración texto*/
+        text-transform: uppercase; /*capitalización texto*/
+        font-family: 'Verdana', sans-serif; /*tipografía texto*/
+        
+        
+        }
+   .rescate{
+       width: 60%;
+   }
+   .logotipo{
+       width: 75%;
+       height: 75%;
+   }
+   /*
+   .oso{
+    width: 100%;
+    
+    object-fit: contain;
+    
+}
+.chocolate{
+    width: 70%;
+   
+    object-fit: contain;
+}
+.bigotes{
+    width: 90%;
+    
+    object-fit: contain;
+}
+.maya{
+    width: 100%;
+    
+    object-fit: contain;
+}
+.pexel{
+    width: 100%;
+    
+    object-fit: contain;
+}
+.wifi{
+    width: 100%;
+    
+    object-fit: contain;
+}
+.luna{
+    width: 100%;
+    
+    object-fit: contain;
+}
+
+*/
+#cuerpo2{
+    background-color: rgba(109, 205, 170 ,1);
+}
+
+#cuerpo2 a img{
+    width:75%;
+    margin: 5%;
+}
+
